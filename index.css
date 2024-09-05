@@ -1,0 +1,338 @@
+
+nav{
+    width: 100vw;
+    /* margin-top: 2vw; */
+    /* background-color: blue; */
+    height: 3vw;
+    top: 0;
+    position: fixed;
+    z-index: 1111;
+    background-color: white;
+}
+label.logo{
+    color:  rgb(54, 5, 169);
+    font-weight: 600;
+    font-size: 2vw;
+    margin-left: 10vw;
+    /* margin-top: 2vw; */
+}
+nav ul{
+    float: right;
+    margin-right: 10vw;
+    margin-top:0.5vw;
+}
+nav ul li{
+    display: inline-block;
+    margin-top: vw;
+
+}
+nav ul li a{
+    color:  rgb(54, 5, 169);
+    text-decoration: none;
+    margin-left: 4vw;
+    font-weight: 500;
+
+}
+.checkbtn{
+    font-size: 2vw;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    color:  rgb(54, 5, 169);
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.Home-container{
+    margin-left: 10vw;
+    margin-top: 1vw;
+    /* width: 40vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home-container-main{
+ width: 40vw;
+}
+.Home-container-h2{
+    color:  rgb(54, 5, 169);
+}
+.Home-container-h22{
+color: rgba(255, 68, 0, 0.621);
+}
+#headings-testimonials , #headings-contactus , #headings-products , #headings-features {
+text-align: center;
+}
+
+.card-body{
+    width: 45vw;
+}
+.card{
+    border: none;
+}
+.mb-34{
+    width: 30vw;
+}
+.Features-container{
+    margin-left: 10vw;
+    margin-top: 6vw;
+    display: flex;
+    justify-content:space-evenly;
+    justify-items: center;
+    gap: 10vw;
+}
+.Features-container2{
+    margin-left: 10vw;
+    margin-top: 6vw;
+    display: flex;
+    justify-content:space-evenly;
+    justify-items: center;
+}
+.Features-container-image3{
+   margin-right: 10vw;
+}
+.mb-333{
+border: 1px solid rgb(161, 159, 159);
+border-radius: 10px;
+height: 10vw;
+width: 30vw;
+}
+
+.Features-container .card-body {
+    width: 30vw; 
+    margin: 10px; 
+    height: 5vw;
+  }
+.products-cards{
+    margin-left: 5vw;
+    margin-top: 5vw;
+    display: flex;
+    /* gap: 5vw; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.mb-33{
+width: 25vw;
+border: 1px solid grey;
+}
+.card-body{
+    width: 24vw;
+}
+.carousel-item{
+    display: flex;
+    flex-direction: column;
+}
+.contact-us{
+    margin-left: 10vw;
+    margin-top: 5vw;
+    display: flex;
+   gap: 15vw;
+}
+.footer{
+    margin-top: 10vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly; 
+    color: white;
+    padding: 3vw;
+    background: rgb(147,147,233);
+    background: linear-gradient(90deg, rgba(147,147,233,1) 0%, rgba(98,0,255,1) 57%);
+}
+.contact , .service , .support , .company{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-img{
+    height: 40vw;
+}
+.carousel{
+    width: 85vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+.carousel-name{
+    font-style: italic;
+}
+.testimonials{
+    margin-top: 5vw;
+}
+.contact--us{
+    margin-top: 5vw;
+}
+
+@keyframes animee{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+#animeee{
+    animation: animee 2s ;
+}
+#animee{
+    animation: animee linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 
+    40%;
+}
+
+
+@media screen and  (max-width: 426px){
+    nav{
+        width: 100vw;
+        position: fixed;
+      background-color: white;
+      z-index: 1111;
+      height: 10vw;
+    }
+    label.logo{
+        font-size: 7vw;
+    }
+    nav ul li a{
+        font-size: 4vw;
+    }
+    .checkbtn{
+        display: block;
+        margin-right: 10vw;
+        font-size: 5vw;
+    }
+    ul{
+        position: fixed;
+        width: 100vw;
+        height: 80vw;
+       line-height: 15vw;
+        text-align: center;
+        top: 10vw;
+        /* background-color:rgb(98, 205, 205); */
+        backdrop-filter: blur(8px);
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    a:hover{
+        color: brown;
+    }
+    .nav-links{
+        display: none; 
+    }
+    #check:checked ~ .nav-links {
+        display: block; 
+    }
+
+    .Home-container{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 20vw;
+    }
+    .Home-container-main {
+        width: 80vw;
+    }
+    .Home-container-h2{
+        font-size: 6vw;
+    }
+    .Home-container-h22 {
+        font-size: 5vw;
+    }
+    .Home-container-main  p{
+        font-size: 3vw;
+    }
+    .image1{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #headings-features , #headings-contactus ,  #headings-products ,  #headings-testimonials{
+        font-size: 9vw;
+    }
+    .mb-34{
+        width: 80vw;
+    }
+    .Features-container{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        gap: 10vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+    .image2 , .image3{
+        width: 80vw;
+    }
+    .image4{
+        width: 80vw;
+    }
+    .mb-33{
+        width: 70vw;
+        height: 10vw;
+    }.card-text{
+        font-size: 3vw;
+    }
+    .mb-333{
+        height: 34vw;
+    width: 60vw;
+    }
+    .Features-container2{
+        display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    }
+    .card-body{
+        width: 60vw;
+    }
+.products-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    width: 80vw;
+}
+.footer{
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+    }
+
+
+
+
+
+
+
+
+
+
