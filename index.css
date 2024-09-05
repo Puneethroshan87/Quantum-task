@@ -94,7 +94,7 @@ text-align: center;
    margin-right: 10vw;
 }
 .mb-333{
-border: 1px solid rgb(161, 159, 159);
+/* border: 1px solid rgb(161, 159, 159); */
 border-radius: 10px;
 height: 10vw;
 width: 30vw;
@@ -155,10 +155,12 @@ border: 1px solid grey;
 }
 .carousel-name{
     font-style: italic;
+    /* color: forestgreen; */
 }
 .testimonials{
     margin-top: 5vw;
 }
+
 .contact--us{
     margin-top: 5vw;
 }
